@@ -1,0 +1,115 @@
+[[section-architecture-constraints]]
+== Randbedingungen
+
+[role="arc42help"]
+
+2.1 Technische Randbedingungen
+
+Die Randbedingungen umfassen technische und organisatorische Randbedingungen des Projektes
+
+
+[options="header"]
+|======================================================================================================================================================================================
+
+|Randbedingung  | Erläuterung, Hintergrund
+
+|Hardwareausstattung               |
+Das Projekt sollte auf einem 1,5 GHz 64-Bit ARM Cortex-A72 Quad-Core-Prozessors funktionieren. Dieser Computer bringt eigene Begrenzungen bezüglich Performance und den diversen Ausgabemöglichkeiten mit.
+
+| Betrieb auf einem Embedded System bzw mit Raspbian OS  |
+Das Projekt muss auf Rasbian OS laufen.
+
+| Implementierung in Java 11|
+Der Code soll in Java implementiert und geschrieben werden
+| Pi4j |
+Die Applikation soll mit der offiziellen Pi4J Library entwickelt werden.
+| Testing & JUnit5
+|Das Testing-Framework ist zu übernehmen. Dokumentieren von funktionstüchtigen Tests im Gitlab Repository|
+Coding Conventions
+|https://www.oracle.com/technetwork/java/codeconventions-150003.pdf - Kapitel 2, 5, 6, 7, 8, 9 und 10
+| Source Code & Version Control
+| Eigenes Gitlab-Project. +
+https://gitlab.fhnw.ch/ip12-22vt/ip12-22vt_netzwerkkapazitaeten
+|Architekturdokumentation|Arc42
+|Zeitplan|
+12.09.2022-14.06.2023
+|Qualitätsanforderung | Das Projekt soll weiter, nicht funktionale Anforderungen beinhalten und umsetzen: xref:04_solution_strategy.adoc[Qualitätsanforderungen]
+|SQLite DB| Vorgegebene Datenbank
+|Entwicklungsumgebung | Intellij IDEA - Professional Edition (Students)
+| Internet Verbindung| Keine Internetverbindung nötig
+| Dokumentation |
+Das ganze Projekt ist gründlich dokumentiert. Dies beinhaltet Aspekte wie z.B: Spielablauf, Inbetriebnahme und die Wartung des Systems
+
+
+
+|======================================================================================================================================================================================
+////
+.Inhalt
+Randbedingungen und Vorgaben, die ihre Freiheiten bezüglich Entwurf, Implementierung oder Ihres Entwicklungsprozesses einschränken.
+Diese Randbedingungen gelten manchmal organisations- oder firmenweit über die Grenzen einzelner Systeme hinweg.
+
+.Motivation
+Für eine tragfähige Architektur sollten Sie genau wissen, wo Ihre Freiheitsgrade bezüglich der Entwurfsentscheidungen liegen und wo Sie Randbedingungen beachten müssen.
+Sie können Randbedingungen vielleicht noch verhandeln, zunächst sind sie aber da.
+
+.Form
+Einfache Tabellen der Randbedingungen mit Erläuterungen.
+Bei Bedarf unterscheiden Sie technische, organisatorische und politische Randbedingungen oder übergreifende Konventionen (beispielsweise Programmier- oder Versionierungsrichtlinien, Dokumentations- oder Namenskonvention).
+
+
+.Weiterführende Informationen
+
+Siehe https://docs.arc42.org/section-2/[Randbedingungen] in der online-Dokumentation (auf Englisch!).
+////
+
+*2.2 Organisatorische Randbedingungen*
+
+|======================================================================================================================================================================================
+s|Randbedingung                 s| Erläuterung, Hintergrund
+|  Team              |
+Shane Zulauf +
+Adrian Miller +
+Erhan Bilgili +
+Ron Gürber +
+Tim Hoffmann +
+Maik Degen +
+Joshua Brehm
+
+| Zeitplan |
+12.09.22 - Start +
+28.11. - 03.12.22 - Projektwoche im Team +
+08.05. - 12.05.23 - Projektwoche im Team +
+14.06.23 - Ende
+
+| Vorgehensmodell |
+Entwicklung risikogetrieben, iterativ und inkrementell. Zur Dokumentation der Architektur kommt arc42 zum Einsatz. Eine Architekturdokumentation gegliedert nach dieser Vorlage ist zentrales Projektergebnis.
+
+|Entwicklungswerkzeuge |
+Entwurf mit Stift und Papier, Diagramme, wenn möglich mit PlantUML. Arbeitsergebnisse zur Architekturdokumentation gesammelt auf dem Gitlab sowohl auch dem Confluence Wiki. Erstellung des Sourcecodes in IntelliJ.
+
+
+|Testing|
+JUnit-Testing für die Sicherstellung der Software. "Test-driven development".
+
+|======================================================================================================================================================================================
+
+
+*2.3 Konventionen*
+
+|======================================================================================================================================================================================
+
+s|Konventionen                 s| Erläuterung, Hintergrund
+|  Architekturdokumentation
+|
+Gliederung nach dem deutschen arc42-Template auf dem Gitlab.
+
+| Kodierrichtlinien für Java |
+Java Coding Conventions basierend auf Oracle
+
+| Sprache (Deutsch vs. Englisch) |
+Grundsätzlich wird die Benennung von Dingen (Schnittstellen und Komponenten) in Diagrammen auf Deutsch verfasst. +
+Im Fachbereich der Grafentheorie bezüglich Max-flow-Problem werden, wenn möglich alle Englische begriffe auf Deutsch übersetzt und ausführlich erklärt.
+
+
+
+

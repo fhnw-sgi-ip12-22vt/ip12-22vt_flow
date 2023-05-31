@@ -1,0 +1,107 @@
+[[section-technical-risks]]
+== Risiken und technische Schulden
+=== Risikotabelle
+
+
+|==========================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+| ID  | Risiko  | Beschreibung | Massnahme | Risiko "LEVEL"
+
+| I001
+| I2C-Kommunikationsprobleme
+| Fehlende oder fehlerhafte Kommunikation zwischen Raspberry Pi 4 und angeschlossenen I2C-Geräten (z. B. TCA9548a, CH423)
+| Überprüfung der Verkabelung und der Adressierung der I2C-Geräte, Implementierung von Fehlerbehandlungsroutinen im Code
+| high: Wird momentan noch implementiert und nimmt sehr viel Zeit in Anspruch
+
+| I002
+| Geeignete Betriebsumgebung
+| Überhitzung des Raspberry Pi 4 oder anderer Hitze erzeugender Komponenten
+| Verwendung des Produkts ausschliesslich in durchlüfteten/klimatisierten Innenräumen
+| low: In der richtigen Umgebung kein Risiko
+
+| I003
+| Absturz aufgrund von Memory-Leaks
+| Fehler in der Java-Software, die das Projekt steuert
+| Durchführung von Code-Reviews, Implementierung von Unit-Tests
+| low: Wird fortlaufend mit Erweiterung des Codes durchgeführt
+
+| I004
+| RFID-Reader-Kommunikationsprobleme
+| Probleme bei der Kommunikation zwischen dem RFID-Reader und dem Raspberry Pi 4
+| Verwendung von genug Abstand zu anderen Komponenten zur Reduzierung von elektromagnetischen Störungen, Überprüfung der Verkabelung und Implementierung von Fehlerbehandlungsroutinen im Code
+| medium: Nur ein RFID-Reader, aber noch nicht genügend getestet
+|==========================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+=== Vergangene Hürden
+
+=== RFID-Chips
+
+Eines der ersten Hindernisse, auf die wir in unserem Projekt gestossen sind, war die Beschaffung von RFID-Chips. Die bestellten Chips stellten sich als nicht "out of the box"-i2c-kompatibel heraus, und konnten nur durch einen sehr komplizierte Modifizierung auf i2c geändert werden. Dies führte zu erheblichen Verzögerungen und zusätzlichen Aufwand für das Team.
+
+=== Komplexität der ursprünglichen Idee
+
+Die ursprüngliche Idee unseres Projekts war sehr komplex und umfasste die Verwendung von 25 RFID-Lesegeräten. Die Umsetzung dieser Idee erwies sich als äusserst schwierig und zeitaufwändig. Deshalb haben wir uns entschieden, das Konzept zu ändern und die Anzahl der RFID-Lesegeräte zu reduzieren, um das Projekt realisierbar zu machen.
+
+=== Verfügbarkeit von Hardware-Bibliotheken
+
+Ein weiterer technischer Risikofaktor in unserem Projekt war die Verfügbarkeit von Bibliotheken für die verwendeten Hardware-Komponenten. Leider waren die benötigten Bibliotheken nur für Python verfügbar, was uns dazu zwang, zusätzliche Zeit für die Anpassung der Bibliotheken an unsere Projektanforderungen zu investieren.
+
+=== Dokumentation von Pi4j Methoden und Klassen
+
+Wir stellten fest, dass die Dokumentation der Pi4j in Bezug auf Methoden und Klassen nicht unseren Erwartungen entsprach. Die bereitgestellten Informationen waren unserer Meinung nach unzureichend, was die Verwendung für die selbst umgeschriebene CH423 Wrapper-Class in unserem Projekt erschwerte. Trotz zahlreicher Beispiele in der Dokumentation waren nur wenige von diesen relevant. Was die Situation weiter verschärfte.
+
+////
+Erst am Schluss des Projekts:
+Zusammenfassend konnten wir durch Vereinfachungen des Projektkonzepts und Einsatz von zusätzlichen Ressourcen, diese Hürden bewältigen und unser Projekt umsetzen.
+////
+
+
+////
+| I001 | RFID interference, Da wir vor haben, mehrere RFID Reader zu nutzen, besteht das Risiko von grosser interference. Die Praktische anwendung haben wir noch nicht untersucht +
+(nur small scale testing). | High, lösbar mit viel Testing
+
+| I002 | Wissensaneignung in Bezug auf allgemeine Lösungen mit der Libary Pi4j. Speziell in Bezug auf die RFID Chips und deren ansteuerung (bei grösserer Anzahl)   | High, Zeitintensiv, Backup plan notwendig.
+
+| I002.1 | Wissensaneignung im Bezug auf i2c, SPI, UART, ansteuerung von mehrfachen RFID Chips unter Verwendung der Pi4j libary.| High, Zeitintensiv, Backup plan notwendig.
+
+|I002.2
+| Vordefinierter Backup plan: Einen, zentralen RFID Chip für Erkennung der "Capacity", bestätigung dieser  jedoch mithilfe von Knöpfen an den diversen Stellen.      | HIGH Technisch leichter umsetzbar, da nur ein RFID anzusteuern ist und nicht 20.
+
+
+
+|I003| Erste Erfahrung mit Implementation eines Maxflow problems, da implementierung und Verständniss kompliziert, hoher aufwand.| High, viel know-how noch nachzuholen
+
+|I004| Verbindung technischer Komponenten (Verkabelung, Löten), Touchscreen, LED's  | High, da know-how noch zu erarbeiten ist.
+
+|I005 | Absturz aufgrund von Memory-Leaks. | medium, Problem sollte bis zur Live-demonstration, nach genug Testing "low" sein.
+
+
+
+|I006| Bezüglich Qualitätsziele:
+Sinnvolle Generation des Schwierigkeitsgrads vom Maxflowproblem. Abschätzung der Stärke| medium|
+
+I007| Implementierung der Wetter API, basierend auf Qualitätszielen: Sollte Offline verfügbar sein. (Caching der Daten)|low
+
+
+|I008
+| Vordefinierter Backup plan: Einen, zentralen RFID Chip für Erkennung der "Capacity", bestätigung dieser  jedoch mithilfe von Knöpfen an den diversen Stellen.      | HIGH Technisch leichter umsetzbar, da nur ein RFID anzusteuern ist und nicht 20.   |
+I009
+| -          | -   | I010
+| -  | -     | I011       | -  |-
+|==========================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+////
+////
+.Motivation
+"Risikomanagement ist Projektmanagement für Erwachsene."
+-- Tim Lister, Atlantic Systems Guild
+
+Unter diesem Motto sollten Sie Architekturrisiken und/oder technische Schulden gezielt ermitteln, bewerten und Ihren Management-Stakeholdern (z.B. Projektleitung, Product-Owner) transparent machen.
+
+.Form
+Liste oder Tabelle von Risiken und/oder technischen Schulden, eventuell mit vorgeschlagenen Maßnahmen zur Risikovermeidung, Risikominimierung oder dem Abbau der technischen Schulden.
+
+
+.Weiterführende Informationen
+
+Siehe https://docs.arc42.org/section-11/[Risiken und technische Schulden] in der online-Dokumentation (auf Englisch!).
+****
+

@@ -1,0 +1,9 @@
+TC 3.7 Edge Stresstest
+
+*Beschreibung:* Die Belastbarkeit und Leuchtkraft der Edges soll getestet werden. Die Bearbeitungstechnik soll getestet werden
+
+*Annahmen und Voraussetzungen:* Die Edges funktionieren bei 15-25°C in einem Raum mit Belüftung.
+
+*Testdaten:* 08.05.2023
+
+*Auszuführende Schritte:* Die Edges sollen unter Druck gesetzt werden um zu schauen bei welchen Werten sie Brechen. Mit einer Lichtquelle (von Smartphone und RGB LED) soll der Acrylstab durchleuchtet werden und die maximale Länge, bei welcher die Lichtsärke nicht abnimmt, messen. Acrylglas mit Klebband bei Schnittstelle einwickeln und bei Decoupiersäge zerschneiden. Schauen ob neue Kante das Licht immernoch gleich bricht. Edge soll bei neuer Kante immernoch gleich leuchten.

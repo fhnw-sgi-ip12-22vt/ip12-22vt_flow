@@ -1,0 +1,20 @@
+== Test 6
+
+[%autowidth]
+|===
+|Datum | 08.05.2023
+| Verantwortlich | Ron Gürber & Shane Zulauf
+|===
+
+include::TestCases/3_3_Optimaler_Klebstoff_Stresstest.adoc[]
+
+*Status:* Erfolgreich
+
+*Bemerkungen pro Klebstoff:*
+Durchührungsort: Werkstatt 4.027 FHNW Campus Brugg-Windisch
+|===
+|Klebstoff|Bemerkung
+|Heissleim|Gut für den Rasen. 3D-Komponenten haften gut aber sind einfach zu entfernen. Leim selber kann auch gut entfernt werden
+|Sekundenkleber|Der Sekundenkleber klebt komischerweise nicht immer gleich-. Wir nehmem an, dass es auf die Auflagefläche draufan kommt. Ab und zu klebt es unglaublich stark aber meistens kann man die Komponente mit wenig Druck lösen.
+|Araldite| Araldite ist generell die beste Lösung für alles. Unglaubliche Widerstandsfähigkeit.Wir haben schlussendlich die meisten Komponenten mit Araldite befestigt.
+|===

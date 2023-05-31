@@ -1,0 +1,14 @@
+TC 0.0: Mit RFID herumexperimentieren
+
+*Beschreibung:* Bei diesem Test soll geprüft werden, ob der RFID-Leser und die RFID-Chips die vorhanden sind, funktionieren.
+
+*Annahmen und Voraussetzungen:* RFID-Leser muss mit dem Crowpi verbindet sein.
+
+*Testdaten:* -
+
+*Auszuführende Schritte:*
+
+. Externe RFID-Leser mit dem Crowpi verbinden und den RFID-Chip an dem RFID-Leser halten. Dasselbe mit dem Crowpi integriertem RFID-Leser machen.
+
+*erwartetes Ergebnis:* Das LED von dem RFID-Leser sollte blinken.
+

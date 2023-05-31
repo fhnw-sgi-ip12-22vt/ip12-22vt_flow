@@ -1,0 +1,13 @@
+== Test 0
+
+[%autowidth]
+|===
+|Datum | dd.11.2022
+|Verantwortlich | Erhan Bilgili
+|===
+
+include::TestCases/0_2_Mehrere_RFID_Chips_Testen.adoc[]
+
+*Status:* -
+
+*Bemerkungen:* -

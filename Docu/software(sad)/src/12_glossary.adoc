@@ -1,0 +1,51 @@
+[[section-glossary]]
+== Glossar
+
+[role="arc42help"]
+****
+.Inhalt
+Die wesentlichen fachlichen und technischen Begriffe, die Stakeholder im Zusammenhang mit dem System verwenden.
+
+Nutzen Sie das Glossar ebenfalls als Übersetzungsreferenz, falls Sie in mehrsprachigen Teams arbeiten.
+
+.Motivation
+Sie sollten relevante Begriffe klar definieren, so dass alle Beteiligten
+
+* diese Begriffe identisch verstehen, und
+* vermeiden, mehrere Begriffe für die gleiche Sache zu haben.
+
+.Form
+* Zweispaltige Tabelle mit <Begriff> und <Definition>
+* Eventuell weitere Spalten mit Übersetzungen, falls notwendig.
+
+.Weiterführende Informationen
+
+Siehe https://docs.arc42.org/section-12/[Glossar] in der online-Dokumentation (auf Englisch!).
+
+****
+[cols="1,2" options="header"]
+|===
+|Begriff |Definition
+
+|I2C (Inter-Integrated Circuit)
+|I2C ist ein Kommunikationsprotokoll, das in der Mikrocontroller-Programmierung verwendet wird. Es ist ein bidirektionales 2-Draht-Bussystem, das eine einfache, effiziente Methode zur Datenübertragung zwischen integrierten Schaltkreisen bietet, wobei nur zwei Busleitungen für die Informationsübertragung benötigt werden. I2C wird häufig zur Kommunikation zwischen Mikrocontrollern und Peripheriegeräten wie Sensoren, Speichern und I/O-Schnittstellen verwendet.
+
+|CH423
+|Die CH423-Klasse bezieht sich auf den Code, der zum Interagieren mit dem CH423-Chip verwendet wird. Dieser Chip wird häufig in der Hardwarekommunikation für die Erzeugung von Signalen und die Steuerung von Geräten verwendet.
+
+|TCA9548A
+|TCA9548A ist ein I2C-Multiplexer, der es ermöglicht, dass mehrere I2C-Geräte, die dieselbe Adresse haben, gleichzeitig an einem einzigen Mikrocontroller angeschlossen werden können. Er ermöglicht das gleichzeitige Senden und Empfangen von Daten von mehreren Quellen oder an mehrere Ziele.
+
+|===
+
+
+[cols="e,2e" options="header"]
+|===
+|Begriff |Definition
+
+|<Begriff-1>
+|<Definition-1>
+
+|<Begriff-2
+|<Definition-2>
+|===

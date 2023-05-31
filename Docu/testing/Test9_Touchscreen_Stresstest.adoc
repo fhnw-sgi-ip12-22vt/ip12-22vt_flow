@@ -1,0 +1,18 @@
+== Test 6
+
+[%autowidth]
+|===
+|Datum | 12.05.2023
+| Verantwortlich | Ron Gürber & Shane Zulauf
+|===
+
+include::TestCases/3_4_Touchscreen_Stresstest.adoc[]
+
+*Status:* Erfolgreich
+
+*Bemerkungen:*
+Durchührungsort: Werkstatt 4.027 FHNW Campus Brugg-Windisch
+|===
+|Komponente|befestigung|Widerstandskraft|Stress
+|Display|Geschraubt|Muss abgeschraubt werden |Das Display ist generell sehr robust. Man kann ihn nicht bewegen und das touch-interface ist auch belastbar.
+|===

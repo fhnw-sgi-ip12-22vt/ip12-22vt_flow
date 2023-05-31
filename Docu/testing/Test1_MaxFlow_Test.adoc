@@ -1,0 +1,13 @@
+== Test 0
+
+[%autowidth]
+|===
+|Datum | 18.11.2022
+|Verantwortlich | Erhan Bilgili
+|===
+
+include::TestCases/0_1_MaxFow_Alg_Testen.adoc[]
+
+*Status:* Erfolgreich
+
+*Bemerkungen:* -.

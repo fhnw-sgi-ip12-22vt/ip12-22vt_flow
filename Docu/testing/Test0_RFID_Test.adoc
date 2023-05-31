@@ -1,0 +1,13 @@
+== Test 0
+
+[%autowidth]
+|===
+|Datum | 19.10.2022
+|Verantwortlich | Erhan Bilgili
+|===
+
+include::TestCases/0_0_RFID-Leser_Testen.adoc[]
+
+*Status:* Teilweise Erfolgreich
+
+*Bemerkungen:* Der externe RFID-Leser hat funktioniert aber, der integrierte RFID-Leser von dem Crowpi hat nicht funktioniert.

@@ -1,0 +1,18 @@
+== Test 6
+
+[%autowidth]
+|===
+|Datum | 08.05.2023
+| Verantwortlich | Ron Gürber & Shane Zulauf
+|===
+
+include::TestCases/3_7_Edge_Stresstest.adoc[]
+
+*Status:* Erfolgreich
+
+*Bemerkungen:*
+Durchührungsort: Werkstatt 4.027 FHNW Campus Brugg-Windisch
+|===
+|Komponente|Bemerkung
+|Edge (Acrylglasstab) | Das Schneiden mit dem Klebbandstreifen ist zwar nicht optimal, aber mit kurzem schleifen der neuen Kante mit 240er-Schleifpapier ist die Kante brauchbar. Bei einer Länge von 300mm reicht eine einseitige Beleuchtung. Die Stäbe können problemlos auf den Boden fallen und verlieren ihre Funktionialität nicht.
+|===

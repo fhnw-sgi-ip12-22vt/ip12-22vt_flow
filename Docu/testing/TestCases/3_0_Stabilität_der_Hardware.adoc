@@ -1,0 +1,10 @@
+TC 3.0 Stabilität der 3D-Komponenten
+
+*Beschreibung:* Bei diesem Test soll geprüft werden, ob es möglich ist, physische Komponenten des Spielbretts ohne böswillige Absichten zu entfernen/abreissen.
+
+*Annahmen und Voraussetzungen:* Mit Araldit festgeklebte Komponenten lösen sich unter keinen Umständen, anders festgeklebte Komponenten können böswillig abgerissen werden.
+
+*Testdaten:* 10/11/12.05.2023
+
+*Auszuführende Schritte:* +
+Durch horizontales versuchtes Hin- und Herbewegen eines Komponenten mit einer ungefähren Stärke von 100 Newton wird die Stabilität geprüft.

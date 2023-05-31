@@ -1,0 +1,14 @@
+TC 0.2: Mehrere RFID auf einmal testen
+
+*Beschreibung:* Bei diesem Test soll geprüft werden, ob der RFID-Leser und die RFID-Chips die vorhanden sind, funktionieren.
+
+*Annahmen und Voraussetzungen:* Sobald wir mehrere RFID-Teile haben..
+
+*Testdaten:* -
+
+*Auszuführende Schritte:*
+
+. 5-10 Stück RFID-Leser mit dem Crowpi oder mit dem RasbPi verbinden und die RFID-Chips an den RFID-Leser halten. Schauen ob mehrere Chips miteinander interferieren.
+
+*erwartetes Ergebnis:* Die LEDs von den RFID-Leser sollten ohne Problem blinken und zusammen benutzbar sein.
+

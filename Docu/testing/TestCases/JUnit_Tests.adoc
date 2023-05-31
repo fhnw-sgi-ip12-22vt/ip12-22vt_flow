@@ -1,0 +1,60 @@
+= JUnit Test Dokumentation
+:author:
+:date:
+:icons:
+:source-highlighter:
+:toc:
+
+== Einleitung
+
+Diese Dokumentation deckt die Testklassen ab, die für das Projekt "Flow" erstellt wurden. Sie beinhaltet zwei Hauptpakete: `ch.fhnw.game`, das Tests für die Hauptspiellogik enthält, und `ch.fhnw.flow.maxflowalg`, das Tests für die Max-Flow-Algorithmus-Implementierung enthält.
+
+== Testklassen in ch.fhnw.game
+
+Im `ch.fhnw.game` Paket finden sich drei Testklassen:
+
+- `GameLogicTest`
+- `LevelTest`
+- `MenuTest`
+
+=== GameLogicTest
+
+Die Klasse `GameLogicTest` testet die Hauptspiellogik. Sie überprüft die korrekte Ausführung der Spiellogik, die Interaktion mit den Spielobjekten und die Auswirkungen von Spieleraktionen.
+
+=== LevelTest
+
+Die Klasse `LevelTest` testet die korrekte Erzeugung und Funktion der Level. Sie überprüft, ob jedes Level mit den richtigen Attributen initialisiert wird, und ob Übergänge zwischen den Leveln korrekt funktionieren.
+
+=== MenuTest
+
+Die Klasse `MenuTest` testet das Hauptmenü und dessen Interaktionen. Sie stellt sicher, dass Menüoptionen korrekt funktionieren und dass Benutzerinteraktionen ordnungsgemäss verarbeitet werden.
+
+== Testklassen in ch.fhnw.flow.maxflowalg
+
+Im `ch.fhnw.flow.maxflowalg` Paket gibt es ebenfalls drei Testklassen:
+
+- `FlowEdgeTest`
+- `FlowNodeTest`
+- `MaxFlowTest`
+
+=== FlowEdgeTest
+
+Die Klasse `FlowEdgeTest` überprüft die Funktionalität der Klasse `FlowEdge`. Sie stellt sicher, dass Kanten korrekt erstellt werden und dass die Klassenmethoden korrekt funktionieren, insbesondere dass Kapazitäten korrekt gesetzt und gehandhabt werden.
+
+=== FlowNodeTest
+
+Die Klasse `FlowNodeTest` überprüft die Funktionalität der Klasse `FlowNode`. Sie stellt sicher, dass Knoten korrekt erstellt werden und dass ihre Eigenschaften (wie Verwendungszustand und Zwischenzielstatus) korrekt gesetzt und manipuliert werden können.
+
+=== MaxFlowTest
+
+Die Klasse `MaxFlowTest` überprüft die Implementierung des Edmonds-Karp Algorithmus für den Maximalfluss. Sie stellt sicher, dass der Algorithmus die korrekten Ergebnisse in verschiedenen Situationen liefert und dass Zwischenziele ordnungsgemäss extrahiert werden.
+
+== Weitere Tests hinzufügen
+
+Wenn Sie weitere Tests hinzufügen möchten, erstellen Sie einfach eine weitere Klasse in dem jeweiligen Paket. Benennen Sie die Klasse entsprechend der Funktionalität, die sie testen soll, und fügen Sie `Test` am Ende hinzu. Innerhalb dieser Klasse können Sie dann Methoden mit der Annotation `@Test` erstellen, um verschiedene Aspekte der zu testenden Funktionalität zu überprüfen.
+
+Es ist eine gute Praxis, Tests so klein wie möglich zu halten und jede Testmethode auf einen bestimmten Aspekt der zu testenden Klasse zu beschränken. Darüber hinaus ist es ratsam, den Code so zu strukturieren, dass er leicht getestet werden kann, was oft bedeutet, dass Methoden und Klassen einzeln verantwortlich sind für das, was sie tun.
+
+== Fazit
+
+Diese sechs Klassen bieten eine umfassende Testabdeckung für das "GraphAlgorithm" Projekt. Sie stellen sicher, dass sowohl die Hauptspiellogik als auch der Maximalflussalgorithmus korrekt funktionieren.

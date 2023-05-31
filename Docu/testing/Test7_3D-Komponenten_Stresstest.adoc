@@ -1,0 +1,22 @@
+== Test 6
+
+[%autowidth]
+|===
+|Datum | 10/11.05.2023
+| Verantwortlich | Ron Gürber & Shane Zulauf
+|===
+
+include::TestCases/3_2_3D-Komponenten_Stresstest.adoc[]
+
+*Status:* Erfolgreich
+
+*Bemerkungen pro Komponente:*
+Durchührungsort: Werkstatt 4.027 FHNW Campus Brugg-Windisch
+|===
+|Komponente|Klebstoff|Widerstandskraft|Stress
+|Knoten Halterung|Sekundenkleber| ca. 100N |Die Knoten Halterungen halten generell auch sehr fest. Man kann sie mit alleinigem Ziehen nicht lösen.
+|Knoten LED|Sekundenkleber| ca. 50N| Die LEDs selber sind etwas weniger resistent aber sind auch schwieriger daran zu ziehen. Laufzeit ca. 50'000 Stunden
+|Häuser & Wasserkraftwerk| Araldite| ca. 150N| Diese Komponenten wurden mit Araldite (2-Komponenten-Kleber) befestigt. Die Komponenten sind generell auch resistent gegen Druck
+|Windrad & Fabrik| Stöpsel in Brett geklebt mit Araldite | ca. 200N | Die Windräder und Fabrik werden auch per Stöpsel ins Holz festgeklebt. Die Fabrik ist Massiv und generell nicht mehr lösbar nach Befestigung. Die Windräder sind etwas zerbrechlicher, da sie verglichen ermassen dünne Druck Komponenten haben.
+|Edge Halterung | Stöpsel in Brett geklebt mit Araldite| ca. 200N| Da die Edge-Halterungen gesteckt und geklebt sind halten sie sehr gut. Wir haben sie auch auf druck getestet und sie sind auch dort ziemlich resistent.
+|===

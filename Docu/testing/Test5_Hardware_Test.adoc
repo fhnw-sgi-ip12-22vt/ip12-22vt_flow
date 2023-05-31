@@ -1,0 +1,14 @@
+== Test 5
+
+[%autowidth]
+|===
+|Datum | 10/11/12.05.2023
+| Verantwortlich | Ron Gürber
+|===
+
+include::TestCases/3_0_Stabilität_der_Hardware.adoc[]
+
+*Status:* Erfolgreich
+
+*Bemerkungen:* Durchührungsort: Werkstatt 4.027 FHNW Campus Brugg-Windisch. +
+Komponenten mit Araldit sind sehr stabil.
