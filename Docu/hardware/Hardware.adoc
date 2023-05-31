@@ -1,0 +1,56 @@
+image::images/pi4j-header.png[]
+
+
+Informationen zum Erstellen und Zusammenbauen finden sie hier: https://www.cs.technik.fhnw.ch/confluence20/display/IP1222vt/Material[] TODO: Link anpassen
+
+== Teileliste
+[[Teileliste]]
+Die Mengenangabe in der Liste ist ohne Ersatzteile und benötigtes Testequipment zu verstehen.
+
+[options="header"]
+|=======================================================================
+| Nr | Name                            | Stückzahl | Kaufort
+| 1 | Raspberry Pi 4B 4GB RAM         | 1 | Von FHNW besorgt
+| 2 | 7inch Capacitive Touch Display LCD  1024×600 HDMI   | 1 | https://www.bastelgarage.ch/7inch-capacitive-touch-display-lcd-c-1024-600-hdmi
+
+| 3 | Wax für 3D Druck TODO Liter              | 3 | TODO
+| 4 | TCA9548A I2C Multiplexer         | 1 |https://www.bastelgarage.ch/8-kanal-i2c-multiplexer-tca9548a
+
+| 5 | Gravity CH423 I2C 24 Digital IO Portexpander | 7 | https://www.bastelgarage.ch/gravity-ch423-i2c-24-digital-io-portexpander?search=Gravity%20io%20expander
+| 6 | Sekundenleim 3ml                    | 2 | Im Migros gekauft
+| 7 | Micro HDMI - zu - HDMI Adapter  | 2 |https://www.ricardo.ch/de/a/micro-hdmi-zu-hdmi-adapter-(fabrikneu-ovp)-1218087588/
+| 8 | Holz für Baukasten         | 1 | Bei OBI in Deutschland gekauft
+| 9 | Square Momentary Button. 12 x 12 x 8 mm with Cap    | 21 |https://www.play-zone.ch/en/platinenschalter-12mm-x-12mm-mit-farbiger-kappe.html
+
+| 10 | PLEXIGLAS® LED FARBLOS 0E011 L | Gesamtlänge 240cm mit &#216;8mm | https://www.plexiglas-shop.com/de/produkte/plexiglas-led/sr0e011l.html
+| 11 | LED LL 5-8000RGB (RG LED) | 30 |https://www.distrelec.ch/de/led-gr-565nm-627nm-gruen-rot-mm-kingbright-59egw/p/17521456
+
+| 12 | L-59EGW (RGB LED)| 12 |https://secure.reichelt.com/ch/en/led-5-mm-4-pin-4000-8000-mcd-rgb-led-ll-5-8000rgb-p156358.html?&nbc=1
+
+| 13 | 3D gedruckte Teile | siehe unten | Privat gedruckt von Tim H.
+| 14 | Jumperkabel Dupont M/M 30cm | 40 |https://www.bastelgarage.ch/jumperkabel-dupont-set-30cm-m-m-40-stuck?search=Jumper
+
+| 15 | Jumperkabel Dupont M/F 30cm | 40 |https://www.bastelgarage.ch/jumperkabel-dupont-set-30cm-m-f-40-stk?search=Jumper
+
+| 16 | Jumperkabel Dupont F/F 30cm | 40 | https://www.bastelgarage.ch/jumperkabel-dupont-set-30cm-f-f-40-stuck
+
+| 17 | Lötzinn 20cm | 1 | Aus der FHNW Werkstatt
+|=======================================================================
+
+
+== Dateien der 3D gedruckten Spielelemente: +
+link:images/[Bilder] +
+link:3D_files/[3D files]
+
+== Abmessungen:
+
+[%header,format=csv]
+|===
+"Objekt","Länge","Breite","Höhe"
+"Spielkasten","700mm","700mm","150mm"
+"A","X","Y","Z"
+|===
+
+
+
+

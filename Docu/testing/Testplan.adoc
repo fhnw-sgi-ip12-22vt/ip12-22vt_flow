@@ -1,0 +1,8 @@
+= Testplan
+
+// https://de.parasoft.com/blog/how-to-write-test-cases-for-software-examples-tutorial/
+// Beschreiben Sie hier, wann Sie was testen wollen.
+
+Wir haben 15 RFID-Leser und dazugehörige Chips bestellt. Wenn die angekommen sind, testen wir ob die zusammen funktionieren und nicht zur Störung führen.
+
+Unsere Website wird anschliessend auch getestet, wenn wir die erstellen.

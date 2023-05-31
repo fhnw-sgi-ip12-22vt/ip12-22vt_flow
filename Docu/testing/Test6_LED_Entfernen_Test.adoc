@@ -1,0 +1,14 @@
+== Test 6
+
+[%autowidth]
+|===
+|Datum | 10/11.05.2023
+| Verantwortlich | Ron Gürber
+|===
+
+include::TestCases/3_1_Entfernen_von_LEDs.adoc[]
+
+*Status:* Erfolgreich
+
+*Bemerkungen:* Durchührungsort: Werkstatt 4.027 FHNW Campus Brugg-Windisch. +
+RGB LED sollten nach unten gedrückt werden. Nach oben herausziehen stellte sich äusserst schwierig heraus.

@@ -1,0 +1,9 @@
+TC 3.1 Entfernen von LEDs
+
+*Beschreibung:* Das erfolgreiche Entfernen von RGB und RG LEDs soll getestet werden.
+
+*Annahmen und Voraussetzungen:* LEDs können nicht von Drittpersonen entfernt werden. Die RGB LEDs sind schwierig zu entfernen. Am Besten wird ein schmaler Holz- oder Plastikstab verwendet, um die RGB LEDs nach unten rauszudrücken.
+
+*Testdaten:* 10/11.05.2023
+
+*Auszuführende Schritte:* Ziehen oder drücken der LED nach oben oder unten wird die optimale Weise zu Ersetzung der LED gefunden.

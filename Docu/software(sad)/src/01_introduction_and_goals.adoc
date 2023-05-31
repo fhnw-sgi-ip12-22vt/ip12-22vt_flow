@@ -1,0 +1,112 @@
+[[section-introduction-and-goals]]
+==	Einführung und Ziele
+
+In diesem Kapitel wird auf die Aufgabenstellung, die funktionalen Anforderung, dies das Produkt beschriebt sowie auch die Qualitätsziele eingegangen.
+Ausserdem werden die Stakeholder und ihre Erwartungshaltung definiert.
+Dies soll einen Überblick über die Rahmenbedingungen des Systems bieten.
+
+=== Aufgabenstellung
+
+In der Aufgabenstellung wird dies näher angeschaut und das Produkt erläutert.
+
+== Was ist FLOW?
+
+Wie genau das Stromnetz aufgebaut wissen wenige.
+Mit der steigenden "Awareness" bezüglichem der effizienten Stromnutzung und optimaler Verteilung des Stroms innerhalb eines Netzes.
+Wie gelangt genug Strom effizient an die jeweiligen Endnutzer.
+Bzw. in unserem abstrahierten Fall Häuser.
+
+Unser Produkt, mit dem Namen "FLOW" soll diese optimale Verteilung, basierend auf dem "Max-flow-Algorithmus" anschaulich dargestellt werden.
+
+* Thematisiert die Komplexität der Verteilung von Strom im Stromnetz
+
+* Interaktiver Umgang mit den einzelnen "Edges" und den "Kapazitäten"
+
+* Die optimale Verteilung wird als anstrebendes Ergebniss dem Nutzer übergeben.
+Der Spieler versucht also durch überlegen, selber auf die beste Verteilungs-möglichkeit zu kommen.
+
+== Wesentliche Features
+
+Die wesentlichen Features sind:
+
+* Anbieten eines strategischen Optimierungs-Spiel.
+
+* Wiederspielbarkeit, durch über Levelauswahl.
+
+* Wissensübertrag, Verständniss bezüglich Stromverteilung und Graphentheorie wird erhört.
+
+
+.Produktziele
+[cols="1,1,2,2,1"]
+|===
+| ID | Name | Beschreibung | Messung | Soll-Wert
+
+| Z01 | Bewusstsein & Energienutzung
+| 14 Jährige haben ein Bewusstsein für eine nachhaltige Energienutzung entwickelt oder erweitert.
+| Auf Google Forms wird die Frage "Hast du dir während des Spielens Gedanken zur effizienten Energienutzung gemacht?" gestellt und kann mit "Ja" oder "Nein" beantwortet werden.
+| Mindestens 50% der Antworten sind "Ja".
+
+| Z02 | Unterhaltung
+| Wer das Produkt nutzt, soll während des Spielens unterhalten werden und Spass daran haben. Im Vergleich zur Alternative "Solarauto-Workshop" und "Lernwelt" hat die jugendliche Zielgruppe mehr Spass in einer kürzeren Zeitspanne. Die Wahrnehmung von Spass und Unterhaltung ist subjektiv.
+| Weil Spass und Unterhaltung subjektiv ist, ist es schwierig dies zu messen. Sinnvoll ist eine Frage auf dem Google Forms, welche mit einer Skala von 1-5 bewertet werden kann.
+| Der Durchschnitt des Fragenbogens soll bei mindestens 3.5 von 5 Sternen sein.
+
+| Z03 | Max Flow Problem
+| Das mathematische Problem (Max Flow Problem) soll den Spielern näher gebracht werden. Benötigt ein Ort im Stromnetz mehr Energie, muss ein optimaler Weg für die Energie vom Herstellungsort bis zur Senke berechnet werden. Dabei hilft das Max Flow Problem.
+| Die Spielerinnen und Spieler beantworten eine Frage auf Google Forms, ob sie mehr über das Max Flow Problem lernen möchten und können die Frage mit "Ja" oder "Nein" beantworten. Ein Link zur Website wird gezeigt.
+| 10% der Spieler besuchen die Website.
+|===
+
+=== Stakeholder
+
+.Stakeholders des Arc42 Document
+[role="arc42help"]
+
+[cols="1,1"]
+|===
+s|Wer?
+s|Interesse, Bezug
+
+|Softwarearchitektinnen und -architekten:
+|Erfahrungen über das Unterhalten und erstellen eines Arc42 Dokuments sammeln.
+
+
+|Entwicklerinnen und Entwickler:
+|Dokumentieren der Entwicklung eines Projekts
+
+|Kunde:
+|Unterstützung der Kreation eines spannenden Max-flow-basierten Spiel
+
+|===
+
+.Stakeholders Projekt
+[options="header"]
+|=========================================================================================================================================================================================================================================================================================================================================================================
+s| Stakeholder           s| Ansprechspersonen                           s| Charakterisierung und Hintergrund                                                                                                                  s| Bedürfnisse
+| Art des Stakeholders  | Name, e-Mail...                             | Eigenschaften, Fähigkeiten, Geräte, Wissen, Erfahrungen, etc., die in die Nutzung des Produkts gebracht werden. Evtl. Verweise auf Dokumente/URL.  | Mögliche Ziele, Anforderungen, Einschränkungen, die das Produkt attraktiv machen.
+| Kunde                 | Andreas Vogt, andreas.vogt@fhnw.ch          | Vertritt Primeo Energie AG, war in den letzten 3 Jahren bereits Kunde bei der FHNW und hat Board Games und Arcade Games in Auftrag gegeben.        | Spielerischer Faktor des Spiels muss gewährleistet sein, erneuerbare Energien müssen eine Rolle spielen. Muss das Max Flow Problem beinhalten
+| Auftraggeber (FHNW)   | Barbara Scheuner, barbara.scheuner@fhnw.ch  | nimmt jährlich Aufträge an, welche realisierbar für das Projekt IP12 sind. Eine Jury wird das Produkt am Ende bewerten.                            | Erfüllung von Deadlines und Abgabeterminen.
+| Qualitätsmanager      | Shane Zulauf, shane.zulauf@students.fhnw.ch  | Verantwortlich für die Entwicklung und Einhaltung | Einhaltung der Qualitätsanforderungen im Projekt
+| Projektmanager        | Ron Gürber, ron.guerber@students.fhnw.ch | Verantwortlich für das initiieren, Planen, Steuern, Kontrollieren und Abschliessen des Projekts.                | Mitarbeit von Teammitgliedern, Einhaltung von Terminen
+|=========================================================================================================================================================================================================================================================================================================================================================================
+
+Features
+
+.Features
+[options="header"]
+|==========================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+| ID  | Name                            | Wichtigkeit  | Aufwand  | Kurzbeschreibung                                                                                                                                                                                     | Ziele                                                                                                                                            | Implementierung
+| F101 | [line-through]#RFID Daten auslesen# | [line-through]#high# | [line-through]#high#
+| [line-through]#Das System sollte die vom User gelegten Bausteine auslesen können.#
+| [line-through]#Spieler können ihren Spielzug auf dem Spielfeld realisieren#
+| [line-through]#RFID reading in Java#
+
+| F102 | Button Input an Edge erkennen           | high         | high     | Das System sollte nach jetzigen Plan mindestens 20 individuelle ansteuerbare Buttons besitzen | Spieler können ihren Spielzug auf dem Spielfeld realisieren                     | Buttons event handling Java
+
+| F103 | Kontrollleuchte neben den Gebäuden  | high         | low      | Knotenpunkte besitzen eine Kontrollleuchte, damit der Spieler erkennen kann, ob seine Lösung erlaubt ist. Auch kann mit der Kontrollleuchte der Startpunkt und Zwischen-/Endpunkt angezeigt werden.  | System hat die möglichkeit dem User seinen Fehler darzustellen.| LED auf dem Spielfeld sind alle einzeln Ansteuerbar.
+| F104 | Levelauswahl                    | high       | high     | Auf einem Touch Bildschirm werden Buttons für verschiedene Levels dargestellt. Mit drücken auf den Bildschirm auf einen Button wird ein Level ausgewählt. Das System weiss somit welches vordefinierte Level dem User dargestellt werden soll.
+| System gibt dem User die Möglichkeit das Spiel, an seinen gewollten Schwierigkeitsgrad anzupassen.
+| Touch-Bildschirm
+| F05| Physische Spielanleitung        | medium       | low       | Auf dem Holz des Board Games ist die Spielanleitung zum Spiel geschrieben.                                                                                                                           | Der Spieler muss nicht den Bildschirm bedienen um die Spielanleitung zu lesen und kann während des Spielens jederzeit die Spielanleitung lesen.  | Laserdruck auf Holz, Klebstoff auf Holz
+| F06 | Touch Screen                    | medium       | high     | Mithilfe eines Touch Screens kann die Levelauswahl betätigt werden, der Highscore kann angezeigt werden und bei einem Fehler des Spielers kann dies auch angezeigt werden.                           | Der Spieler tippt auf den Bildschirm, um weitere Level spielen zu können                                                                         | Verkabelung mit RPi und programmierung auf RPi, dann Einsetzung in Holzrahmen
+|==========================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================

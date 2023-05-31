@@ -1,0 +1,9 @@
+TC 3.2 3D-Komponenten Stresstest
+
+*Beschreibung:* Die Widerstandsfähigkeit und generelle Belastbarkeit aller 3D-Komponeten soll getestet werden
+
+*Annahmen und Voraussetzungen:* 3D-Komponenten können nicht von Drittpersonen entfernt oder zersört werden. Die Komponenten sind schwierig zu entfernen.
+
+*Testdaten:* 10.05.2023
+
+*Auszuführende Schritte:* Ziehen, Drücken und generelle Druck auf die 3D-Komponenten ausüben und messen bei welchen Kräften die Komponente Bricht/sich löst

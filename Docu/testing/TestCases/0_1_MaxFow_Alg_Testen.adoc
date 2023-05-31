@@ -1,0 +1,52 @@
+TC 0.1: Max-Flow Algorithm source code testen
+
+*Beschreibung:* Bei diesem Test soll geprüft werden, ob der Source Code das unser Entwickler geschrieben hat, fehlerfrei funktioniert und richtiges Output rausgibt.
+
+*Annahmen und Voraussetzungen:* Unit-Tests sollten geschrieben werden.
+
+*Testdaten:*
+
+
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+
+public class MaxFlowTest {
+
+@Test
+
+    public void fordFulkerson() {
+        int graph[][] = new int[][]{
+        {0, 16, 13, 0, 0, 0, 0},
+        {0, 0, 10, 12, 0, 0, 0},
+        {0, 4, 0, 0, 14, 0, 0},
+        {0, 0, 9, 0, 0, 20, 1},
+        {0, 0, 0, 7, 0, 4, 0},
+        {0, 0, 0, 0, 0, 0, 0},
+        {0, 0, 0, 0, 1, 0, 0}
+                                };
+
+    MaxFlow m = new MaxFlow();
+    int[] interimGoals = new int[]{0, 1, 2, 3, 4, 5, 6};
+    int mF = m.fordFulkerson(graph, 0, 5, interimGoals);
+
+    assertEquals(23, mF);
+    boolean[] interimGoalsReached = m.getInterimGoalsReached(m.getFlowGraph(), interimGoals);
+    assertEquals(false, interimGoalsReached[6]);// 7th element should be false
+    for(int i = 0; i < interimGoalsReached.length - 1; i++) { // everything except for 7th (last) element
+        assertEquals(true, interimGoalsReached[i]);
+        }
+    }
+}
+
+
+*Auszuführende Schritte:*
+
+. Unit-Tests ausführen.
+
+*erwartetes Ergebnis:* Tests sollten bestehen.
+
+
+

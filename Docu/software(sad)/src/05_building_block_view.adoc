@@ -1,0 +1,99 @@
+[[section-building-block-view]]
+== Bausteinsicht
+
+Das System wird in einzelne Bausteine unterteilt. Die Bausteinsicht zeigt diese Bausteine auf und verdeutlicht diese Abhängigkeit.
+
+//  Change Removed, outdated: image::./images/BausteinDraft.png[Bausteinsicht]
+
+
+
+////
+.Inhalt
+Die Bausteinsicht zeigt die statische Zerlegung des Systems in Bausteine (Module, Komponenten, Subsysteme, Klassen, Schnittstellen, Pakete, Bibliotheken, Frameworks, Schichten, Partitionen, Tiers, Funktionen, Makros, Operationen, Datenstrukturen, ...) sowie deren Abhängigkeiten (Beziehungen, Assoziationen, ...)
+
+
+Diese Sicht sollte in jeder Architekturdokumentation vorhanden sein.
+In der Analogie zum Hausbau bildet die Bausteinsicht den _Grundrissplan_.
+
+.Motivation
+Behalten Sie den Überblick über den Quellcode, indem Sie die statische Struktur des Systems durch Abstraktion verständlich machen.
+
+Damit ermöglichen Sie Kommunikation auf abstrakterer Ebene, ohne zu viele Implementierungsdetails offenlegen zu müssen.
+
+.Form
+Die Bausteinsicht ist eine hierarchische Sammlung von Blackboxen und Whiteboxen (siehe Abbildung unten) und deren Beschreibungen.
+////
+
+
+
+=== Whitebox Gesamtsystem
+
+Whitebox Gesamtansicht
+[Diagramm platzhalter: Ein Diagramm, das die vier Hauptblöcke und ihre Beziehungen zeigt]
+
+Das Spiel beinhaltet 4 Grundkonzepte welche sachlich voneinander getrennt werden können.
+
+. Benutzerinteraktion
+. Logik und Ablauf des Spiels
+. Initialisierung und Datenverwaltung der Spielinformationen
+. Schnittstelle mit Informationsaustausch zu Hardwarekomponenten
+
+Das System wurde dementsprechend in vier Hauptblöcke unterteilt:
+
+. User Interface (UI)
+. Game Logic
+. Game Data Management
+. Hardware Interface
+
+==== User Interface (UI)
+
+Dieser Baustein ist für die Interaktion mit dem Benutzer verantwortlich. Er verarbeitet Benutzereingaben, welche von dem Hardwareinterface geliefert werden: Eingabeinformation von Knöpfen und Touchscreen. Diese Informationen werden an die Geschäftslogik weitergegeben.
+
+[Diagramm platzhalter: Ein Diagramm das in das entsprechene Element der Ebene 2 hineinzoomt]
+
+==== Game Logic
+
+Dieser Baustein implementiert die Hauptlogik des Spiels. Er erhält Eingaben vom Benutzer durch das UI und steuert die Verteilung von "Strom" in den Kanten des Graphen. Er kommuniziert mit dem Game Data Management, um den Zustand des Spiels zu ändern und abzufragen.
+
+[Diagramm platzhalter: Ein Diagramm das in das entsprechene Element der Ebene 2 hineinzoomt]
+
+==== Game Data Management
+
+Dieser Baustein verwaltet den Zustand des Spiels. Er speichert Informationen über die Verteilung von "Strom" in den Kanten und die Zustände der Knoten. Er erhält Anweisungen von der Game Logic und stellt Informationen zur Verfügung, wenn sie benötigt werden.
+
+==== Hardware Interface
+
+Dieser Baustein ist für die Kommunikation mit der Hardware verantwortlich. Er empfängt Anweisungen von der Game Logic, um die LEDs zu steuern und die Zustände der Buttons abzufragen und entnimmt Signale der Komponenten, welche die Benutzerinteraktion ermöglichen.
+
+[Diagramm platzhalter: Ein Diagramm das in das entsprechene Element der Ebene 2 hineinzoomt]
+
+=== Blackbox Gesamtsystem
+
+Hier folgen jetzt Erläuterungen zu Blackboxen der Ebene 1.
+
+[cols="1,2" options="header"]
+|===
+| **Name** | **Verantwortung**
+| _User Interface_ | _Verarbeitet Benutzereingaben und liefert Benutzerinteraktionen_
+| _Game Logic_ | _Steuert den Spielablauf und die Spiellogik_
+| _Game Data Management_ | _Speichert und verwaltet den Zustand des Spiels_
+| _Hardware Interface_ | _Verantwortlich für die Kommunikation mit der Hardware_
+|===
+
+==== User Interface
+Zweck/Verantwortung: Verarbeitung der Benutzereingaben und Lieferung von Benutzerinteraktionen.
+Schnittstelle(n): Interaktion mit der Hardware und dem Benutzer, Kommunikation mit der Game Logic.
+
+==== Game Logic
+Zweck/Verantwortung: Steuerung der Spiellogik und des Spielablaufs.
+Schnittstelle(n): Empfang von Benutzereingaben vom User Interface, Kommunikation mit dem Game Data Management und dem Hardware Interface.
+
+
+==== Game Data Management
+Zweck/Verantwortung: Speicherung und Verwaltung des Zustandes des Spiels.
+Schnittstelle(n): Empfang von Anweisungen von der Game Logic und Bereitstellung von Informationen, wenn sie benötigt werden.
+
+
+==== Hardware Interface
+Zweck/Verantwortung: Verantwortlich für die Kommunikation mit der Hardware.
+Schnittstelle(n): Empfang von Anweisungen von der Game Logic zur Steuerung der Hardware.

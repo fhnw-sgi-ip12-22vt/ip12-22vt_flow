@@ -1,0 +1,13 @@
+= Coding Conventions
+
+== Verwendete Konventionen
+
+Zur Sicherung der Code Qualität verwenden wir die Sun Coding Conventions.
+https://www.oracle.com/technetwork/java/codeconventions-150003.pdf
+
+== Sicherstellung der Einhaltung der Konventionen
+
+- Checkstyle IntelliJ linter
+- Checkstyle Maven Plugin
+- Code Reviews
+- CI/CD Pipelines

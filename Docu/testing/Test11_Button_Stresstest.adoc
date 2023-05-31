@@ -1,0 +1,18 @@
+== Test 6
+
+[%autowidth]
+|===
+|Datum | 08.05.2023
+| Verantwortlich | Ron Gürber & Shane Zulauf
+|===
+
+include::TestCases/3_6_Button_Stresstest.adoc[]
+
+*Status:* Erfolgreich
+
+*Bemerkungen:*
+Durchührungsort: Werkstatt 4.027 FHNW Campus Brugg-Windisch
+|===
+|Komponente|Bemerkung
+|Button |Die Buttons halten sehr gut. Man kann den Button Kopf abnehmen und ersetzen, falls er zerstört wird. Die Funktionalität der Buttons ist auch unter hohen Druck noch gewährleistet. Es kann jedoch bei hohem benutz dazu führen, dass die Buttons bei leichtem Betätigen klicken, jedoch kein Signal registrieren. Solche Buttons sind noch funktionsfähig, aber man muss etwas fester drücken.
+|===

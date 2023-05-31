@@ -1,0 +1,120 @@
+[[section-solution-strategy]]
+== Lösungsstrategie
+[cols="1, 1", options="header"]
+|===
+|Qualitätsziel |Entscheidungen zur Erfüllung
+.3+|Benutzerfreundlichkeit
+|Verwendung von JavaFX: JavaFX ermöglicht die Erstellung einer intuitiven und ansprechenden Benutzeroberfläche, was die Benutzerfreundlichkeit erhöht.
+|Verwendung von haptischen Elementen wie Knöpfen: Diese ermöglichen eine direkte und einfache Interaktion mit dem Spiel, was die Benutzerfreundlichkeit verbessert.
+|Verwendung von klaren und verständlichen Anweisungen: Durch die Bereitstellung von klaren Anweisungen und Feedback können Benutzer das System leichter verstehen und verwenden, was die Benutzerfreundlichkeit erhöht.
+.3+|Zuverlässigkeit
+|Verwendung von Unit-Tests: Durch das Testen einzelner Komponenten kann sichergestellt werden, dass diese korrekt funktionieren. Dies erhöht die Zuverlässigkeit des Gesamtsystems.
+|Verwendung von zuverlässigen Komponenten: Durch die Verwendung von bewährten und zuverlässigen Komponenten wie Buttons und RFID-Readern kann die Zuverlässigkeit des Systems erhöht werden.
+|Regelmässige Überprüfung und Aktualisierung: Durch regelmässige Überprüfungen und Aktualisierungen kann sichergestellt werden, dass das System stets auf dem neuesten Stand und frei von Fehlern ist, was die Zuverlässigkeit erhöht.
+.3+|Wartbarkeit
+|Verwendung von Java: Java ist eine weit verbreitete Programmiersprache mit einer grossen Community und vielen Ressourcen. Dies erleichtert die Wartung und Weiterentwicklung des Systems.
+|Verwendung von gut dokumentiertem und strukturiertem Code: Durch die Verwendung von gut dokumentiertem und strukturiertem Code kann die Wartung des Systems erleichtert werden.
+|Verwendung von Versionskontrollsystemen wie Git: Durch die Verwendung von Versionskontrollsystemen kann der Code leichter verwaltet und aktualisiert werden, was die Wartbarkeit verbessert.
+|===
+
+=== Motivation
+Das Spiel soll für die Stakeholder und Kunden interaktiv mit haptischen Elementen sein. +
+Deswegen mussten entweder Knöpfe oder RFID Reader verwendet werden. +
+Wegen mangelnder Vorkenntnisse mit RFID Readern und nicht vorhandenen Libraries, wurden Knöpfe verwendet. +
+
+=== Zentralen Entwurfsentscheidungen
+Biweekly Sprints wurden in der zweiten Hälfte des Projekts eingeführt, um die Produktiviät zu steigern. Dies wurde erreicht. +
+Die RFID Reader wurden durch Knöpfe ersetzt, da die RFID Reader nicht funktionierten. +
+Viele Komponenten wurden 3D gedruckt, da diese Komponenten nicht im Einzelhandel erhältlich waren. +
+
+=== Technologieentscheidungen
+.Technologieentscheidungen
+[cols="1, 1", options="header"]
+|===
+|Entscheid |Begründung
+|Verwendung von Java | Vorgabe der FHNW Brugg-Windisch
+|Verwendung von JavaFX | JavaFX ist eine moderne GUI-Technologie, welche sich gut für die Entwicklung von interaktiven GUIs eignet.
+| Verwendung von Holz für den Spielkasten | Holz ist ein natürliches und nachhaltiges Material, welches sich gut für die Herstellung von Spielkästen eignet.
+| Verwendung von LEDs und Knöpfen | LEDs und sind einfache Komponenten, welche sich gut für die Interaktion mit dem Spiel eignen. +
+Dazu sind diese Komponenten günstig im Einzelhandel erhältlich.
+| I2C Multiplexer (TCA9548A) & Gravity Board (CH423) | Der Einsatz des I2C Multiplexers und des Gravity Boards bietet folgende Vorteile:
+
+ Der I2C Multiplexer ermöglicht die Verbindung mehrerer I2C-Geräte über denselben I2C-Bus, wodurch Adresskonflikte vermieden werden und die Kommunikation erleichtert wird. Dadurch können mehrere I2C-Geräte effizient und unabhängig voneinander angeschlossen und gesteuert werden. +
+
+Das Gravity Board erweitert die Anzahl der digitalen Ein- und Ausgangspins über den I2C-Bus, was zusätzliche digitale Komponenten wie Tasten und LEDs ermöglicht. Durch den Einsatz des Gravity Boards können diese Komponenten einfach angeschlossen und gesteuert werden, ohne dass zusätzliche Hardware-Schnittstellen benötigt werden.
+|===
+
+=== Relevante organisatorische Entscheidungen
+.Relevante organisatorische Entscheidungen
+[cols="1, 1", options="header"]
+|===
+|Entscheid |Begründung
+| Verwendung von Scrum | Scrum ist ein agiler Entwicklungsprozess, welcher sich gut für die Entwicklung von Software eignet. +
+| Verwendung von Gitlab | Gitlab ist eine moderne Plattform, welche sich gut für die Entwicklung von Software eignet. +
+| Verwendung von Jira und Confluence | Vorgegeben von der FHNW Brugg-Windisch. Eignen sich für die Verwaltung von Arbeitszeiten und Dokumentationen. +
+| Anwendung von biweekly Sprints | Die Anwendung von biweekly Sprints ermöglicht es, dass die Stakeholder und Kunden regelmässig über den Fortschritt informiert werden. +
+| Verzicht auf spezifische Requirements | Gewisse Requirements mussten geändert werden, damit genug Zeit für die Entwicklung der Software vorhanden ist. +
+|===
+
+=== Technologieentscheidungen
+.Technologieentscheidungen
+[cols="1, 1", options="header"]
+|===
+|Entscheid |Begründung
+|Verwendung von Java | Die Verwendung von Java wurde von der FHNW Brugg-Windisch vorgegeben.
+|Verwendung von JavaFX | JavaFX wurde als moderne GUI-Technologie gewählt, da es sich gut für die Entwicklung interaktiver Benutzeroberflächen eignet.
+|Verwendung von Holz für den Spielkasten | Holz wurde aufgrund seiner natürlichen und nachhaltigen Eigenschaften ausgewählt, um einen Spielkasten herzustellen.
+|Verwendung von LEDs und Knöpfen | LEDs und Knöpfe wurden als einfache und kostengünstige Hardwarekomponenten gewählt, um die Interaktion mit dem Spiel zu ermöglichen. Zudem sind sie im Einzelhandel leicht verfügbar.
+|Verwendung von Knöpfen | Knöpfe wurden als haptische Komponenten ausgewählt, da sie von relevanten Stakeholdern und Kunden gewünscht wurden.
+|Verwendung von I2C Multiplexer und Gravity Board | Der Einsatz des I2C Multiplexers und des Gravity Boards bietet folgende Vorteile:
+
+Der I2C Multiplexer ermöglicht die Verbindung mehrerer I2C-Geräte über denselben I2C-Bus, wodurch Adresskonflikte vermieden werden und die Kommunikation erleichtert wird. Dadurch können mehrere I2C-Geräte effizient und unabhängig voneinander angeschlossen und gesteuert werden.
+
+|Gravity Board: |Das Gravity Board erweitert die Anzahl der digitalen Ein- und Ausgangspins über den I2C-Bus, was zusätzliche digitale Komponenten wie Tasten und LEDs ermöglicht. Durch den Einsatz des Gravity Boards können diese Komponenten einfach angeschlossen und gesteuert werden, ohne dass zusätzliche Hardware-Schnittstellen benötigt werden.|
+
+
+|===
+
+=== Rahmenbedingungen
+.Rahmenbedingungen
+[cols="1, 1", options="header"]
+|===
+| Anforderung | Beschreibung
+| Platzierung | Das Spiel soll auf einem Tisch (optimalerweise 60-80cm Höhe) platziert werden können.
+| Sicherheit | Das Spiel muss sicher und stabil aufgestellt werden, um Verletzungen zu vermeiden.
+| Spielfläche | Die Seite mit dem Display muss frei stehen, damit die Spielpersonen das Spiel spielen können.
+| Stromversorgung | - Das daran verbundene Stromkabel muss an einer Steckdose (Typ J) angeschlossen werden. +
+- Die Switch an dem Stromkabel muss betätigt werden.
+| Zugänglichkeit | Das Spiel muss für Menschen mit unterschiedlichen Einschränkungen zugänglich sein, um eine inklusive und vielfältige Spielumgebung zu schaffen. Somit ist empfehlenswert, wenn die Höhe des Tisches verstellt werden könnt. Inkl. Spielumgebung
+| Sicherung des Spiels | Das Spiel ist nicht wasserdicht und nicht feuerfest. Es muss vor Wasser und Feuer geschützt werden und an einem trockenen Ort gelagert/aufgestellt werden.
+| Beförderung | Das Spiel kann von einer oder zwei Personen getragen werden.
+|===
+
+////
+[role="arc42help"]
+****
+.Inhalt
+Kurzer Überblick über die grundlegenden Entscheidungen und Lösungsansätze, die Entwurf und Implementierung des Systems prägen.
+Hierzu gehören:
+
+* Technologieentscheidungen
+* Entscheidungen über die Top-Level-Zerlegung des Systems, beispielsweise die Verwendung gesamthaft prägender Entwurfs- oder Architekturmuster,
+* Entscheidungen zur Erreichung der wichtigsten Qualitätsanforderungen sowie
+* relevante organisatorische Entscheidungen, beispielsweise für bestimmte Entwicklungsprozesse oder Delegation bestimmter Aufgaben an andere Stakeholder.
+
+.Motivation
+Diese wichtigen Entscheidungen bilden wesentliche „Eckpfeiler“ der Architektur.
+Von ihnen hängen viele weitere Entscheidungen oder Implementierungsregeln ab.
+
+.Form
+Fassen Sie die zentralen Entwurfsentscheidungen *kurz* zusammen.
+Motivieren Sie, ausgehend von Aufgabenstellung, Qualitätszielen und Randbedingungen, was Sie entschieden haben und warum Sie so entschieden haben.
+Vermeiden Sie redundante Beschreibungen und verweisen Sie eher auf weitere Ausführungen in Folgeabschnitten.
+
+.Weiterführende Informationen
+
+Siehe https://docs.arc42.org/section-4/[Lösungsstrategie] in der online-Dokumentation (auf Englisch!).
+
+****
+////
+

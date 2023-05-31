@@ -1,0 +1,9 @@
+TC 3.4 3D-Komponenten Stresstest
+
+*Beschreibung:* Die Widerstandsfähigkeit und generelle Belastbarkeit des Touchscreen-Displays soll getestet werden
+
+*Annahmen und Voraussetzungen:* Display soll nicht von Drittpersonen entfernt oder zersört werden können. Der Display funktionieren bei 15-25°C in einem Raum mit Belüftung.
+
+*Testdaten:* 12.05.2023
+
+*Auszuführende Schritte:* Ziehen, Drücken und generelle Druck auf den Display ausüben. Mögliche Schwachstellen notieren.

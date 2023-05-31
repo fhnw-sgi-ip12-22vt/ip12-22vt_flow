@@ -1,0 +1,9 @@
+TC 3.3 Optimaler Klebstoff Stresstest
+
+*Beschreibung:* Der optimale Klebstoff für das Kleben der Komponenten soll gefunden werden
+
+*Annahmen und Voraussetzungen:* Komponenten sollen festkleben und nicht entfernbar sein.
+
+*Testdaten:* 08.05.2023
+
+*Auszuführende Schritte:* Ziehen, Drücken und generelle Druck auf die 3D-Komponenten ausüben und messen bei welchen Kräften die Komponente sich löst. Dieses Verafheren mit allen Klebstoffen vergleichen.

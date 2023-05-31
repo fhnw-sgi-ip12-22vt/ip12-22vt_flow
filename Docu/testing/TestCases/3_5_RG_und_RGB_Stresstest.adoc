@@ -1,0 +1,9 @@
+TC 3.5 RG und RGB LEDs Stresstest
+
+*Beschreibung:* Die Belastbarkeit und auch funktionalität der genannten LEDs soll getestet werden.
+
+*Annahmen und Voraussetzungen:* Die genannten LEDs können nicht von Drittpersonen entfernt oder zersört werden. Die LEDs sind schwierig zu entfernen. Die LEDs überhitzen nicht und leuchten wie erwartet. Die LEDs funktionieren bei 15-25°C in einem Raum mit Belüftung.
+
+*Testdaten:* 10.05.2023
+
+*Auszuführende Schritte:* Ziehen, Drücken und generelle Druck auf die LEDs ausüben und messen bei welchen Kräften die Komponente sich löst.

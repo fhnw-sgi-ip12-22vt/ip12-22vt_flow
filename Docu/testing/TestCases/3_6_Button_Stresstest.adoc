@@ -1,0 +1,9 @@
+TC 3.6 Button Stresstest
+
+*Beschreibung:* Die Belastbarkeit der Buttons soll getestet werden.
+
+*Annahmen und Voraussetzungen:* Buttons können nicht von Drittpersonen entfernt oder zersört werden. Die Komponenten sind schwierig zu entfernen und sind nach langer Benutzdauer noch funktional. Die Buttons funktionieren bei 15-25°C in einem Raum mit Belüftung.
+
+*Testdaten:* 08.05.2023
+
+*Auszuführende Schritte:* Ziehen, Drücken und generelle Druck auf den Button ausüben. Button sehr oft, sehr schnell und mit verschiedenen Druckwerten betätigen; schauen wie oft dieser Vorgang wiederholt werden kann bevor Button bricht / nicht mehr funktional ist.
