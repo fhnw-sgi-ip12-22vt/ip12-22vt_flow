@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.fhnw.flow.game.GUI">
+   <children>
+      <Button layoutX="205.0" layoutY="88.0" onAction="#startEasyLevel" styleClass="button_medium" stylesheets="@style.css" text="Level 1">
+      </Button>
+      <Button layoutX="205.0" layoutY="200.0" onAction="#startMidLevel" styleClass="button_medium" stylesheets="@style.css" text="Level 2">
+      </Button>
+      <Button layoutX="205.0" layoutY="312.0" onAction="#startHardLevel" styleClass="button_medium" stylesheets="@style.css" text="Level 3">
+      </Button>
+      <Button layoutX="205.0" layoutY="456.0" onAction="#switchToHome" styleClass="button_medium" stylesheets="@style.css" text="Home">
+      </Button>
+   </children>
+</Pane>

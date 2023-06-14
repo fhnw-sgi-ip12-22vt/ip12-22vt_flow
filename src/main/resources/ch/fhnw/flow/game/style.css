@@ -1,0 +1,62 @@
+@font-face {
+    src: url("fonts/Roboto-Bold.ttf");
+}
+
+.container {
+
+    -fx-padding: 64px;
+}
+
+.button_start {
+
+    -fx-background-color: #0D0D0D;
+    -fx-text-fill: #F0F0F0;
+    -fx-font-family: Roboto;
+    -fx-font-size: 64px;
+    -fx-padding: 24px;
+    -fx-pref-width: 819.2px;
+
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-text-alignment: center;
+}
+
+.button_medium {
+    -fx-background-color: #0D0D0D;
+    -fx-text-fill: #F0F0F0;
+    -fx-font-family: Roboto;
+    -fx-font-size: 48px;
+    -fx-padding: 16px;
+    -fx-pref-width: 614.4px;
+    -fx-pref-height: 70px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-text-alignment: center;
+}
+
+.button_deactivated {
+    -fx-background-color: #707070;
+}
+
+.issue_message {
+    -fx-text-fill: #FF5050;
+    -fx-font-family: Roboto;
+    -fx-font-size: 64px;
+    -fx-max-width: 614.4px;
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+}
+
+.issue_border {
+    -fx-border-width: 4px;
+    -fx-border-color: #FF5050;
+    -fx-border-radius: 5px;
+}
+
+.scoreboard {
+    -fx-font-size: 24px;
+    -fx-border-width: 4px;
+    -fx-border-color: #0D0D0D;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}

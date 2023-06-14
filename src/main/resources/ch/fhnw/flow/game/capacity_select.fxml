@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.fhnw.flow.game.GUI">
+   <children>
+      <Button layoutX="205.0" layoutY="11" onAction="#setIntensity0" styleClass="button_medium" stylesheets="@style.css" text="Stärke: 0">
+      </Button>
+      <Button layoutX="205.0" layoutY="133" onAction="#setIntensity1" styleClass="button_medium" stylesheets="@style.css" text="Stärke: 1">
+      </Button>
+      <Button layoutX="205.0" layoutY="255" onAction="#setIntensity2" styleClass="button_medium" stylesheets="@style.css" text="Stärke: 2">
+      </Button>
+      <Button layoutX="205.0" layoutY="377" onAction="#setIntensity3" styleClass="button_medium" stylesheets="@style.css" text="Stärke: 3">
+      </Button>
+      <Button layoutX="205.0" layoutY="499" onAction="#setIntensityCancel" styleClass="button_medium" stylesheets="@style.css" text="Abbrechen">
+      </Button>
+   </children>
+</Pane>

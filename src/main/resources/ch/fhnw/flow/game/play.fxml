@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.fhnw.flow.game.GUI">
+   <children>
+      <Label fx:id="issueMsg" layoutX="205.0" layoutY="82.0" styleClass="issue_message" stylesheets="@style.css"/>
+      <Button fx:id="submit_button" layoutX="205.0" layoutY="344.0" onAction="#onSubmit" styleClass="button_medium, button_deactivated" stylesheets="@style.css" text="Lösung Abgeben">
+      </Button>
+      <Button layoutX="205.0" layoutY="456.0" onAction="#cancelGame" styleClass="button_medium" stylesheets="@style.css" text="Spiel Abbrechen">
+      </Button>
+   </children>
+</Pane>
