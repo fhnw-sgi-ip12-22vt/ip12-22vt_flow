@@ -56,7 +56,9 @@ Um die Applikation erfolgreich zu starten, werden folgende Schritte benötigt:
 - Bedienen des Raspberry Pi über Maus und Tastatur
 - Starten des Programms "Terminal"
 - Ausführen des Befehls: "cd /opt/flow". Nun befindet sich man im Verzeichnis des Projekts.
+- Ausführen des Befehls: "i2cset -y 1 0x70 0x4"
 - Ausführen des Befehls: "export DISPLAY=:0 && xhost local:root && sudo mvn clean javafx:run" im Verzeichnis des Projekts.
+- Alternativ kann der pi im selben netzwerk eines Computers sein welcher mit ssh verbunden wird. In diesem fall kann das bash script: unter /assets/bash-script/run.sh verwendet werden und mit "./run.sh & disown" detached ausgeführt werden.
 
 === Wartung
 Um die Wartung zu vereinfachen, können viele Komponenten einfach ausgetauscht werden. Lötkenntnisse sind Voraussetzung,

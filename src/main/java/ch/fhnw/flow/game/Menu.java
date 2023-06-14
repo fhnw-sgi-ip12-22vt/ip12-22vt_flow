@@ -48,7 +48,7 @@ public class Menu {
 
         @Override
         public String toString() {
-            return this.username + "; Punktzahl: " + this.score + "; MaxFlow: " + this.achieved_maxflow + "/" + this.maxflow;
+            return this.username + "; Punktzahl: " + this.score;// + "; MaxFlow: " + this.achieved_maxflow + "/" + this.maxflow;
         }
     }
 
